@@ -24,7 +24,7 @@ ul {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 16px;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
   }
@@ -53,10 +53,12 @@ ul {
 
   .workbench{
     font-family: 'Workbench', sans-serif;
+    font-size: 16px;
   }
 
   .roboto{
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
   }
 
   .oswald{
