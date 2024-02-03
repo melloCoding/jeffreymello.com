@@ -26,9 +26,9 @@ ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: "Roboto", sans-serif;
   }
   
-  /* Change the link color to #111 (black) on hover */
   li a:hover {
     background-color: #111;
   }
@@ -44,6 +44,9 @@ ul {
     margin-right: 3px;
   }
   
+  h1{
+    text-align: center;
+  }
   .active{
     background-color: orange;
   }
@@ -58,4 +61,12 @@ ul {
 
   .oswald{
     font-family: 'Oswald', sans-serif;
+  }
+
+  .papyrus{
+    font-family: "papyrus", papyrus;
+  }
+
+  .sans{
+    font-family: "Comic Sans MS", cursive;
   }
