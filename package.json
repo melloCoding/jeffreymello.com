@@ -1,11 +1,7 @@
 {
-  "name": "jeffreymello.com",
+  "name": "vanilla-basic",
   "version": "1.0.0",
-  "description": "All fonts used are not mine they can be found at google fonts and at these links\r https://fonts.google.com/specimen/Workbench\r https://fonts.google.com/specimen/Roboto\r https://fonts.google.com/specimen/Oswald",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+  "scripts": { 
+    "start": "sirv ./src public --cors --single --no-clear --port 8000"
+  }
 }
