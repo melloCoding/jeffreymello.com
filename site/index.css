@@ -8,7 +8,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-nav ul{
+.pcnav{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -17,6 +17,17 @@ nav ul{
     position: fixed;
     top: 0;
     width: 100%;
+  }
+
+.mobilenav{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
   }
   
   nav ul li {
