@@ -5,9 +5,6 @@
 /*import the Oswald font*/
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 .pcnav{
     list-style-type: none;
     margin: 0;
@@ -26,7 +23,7 @@
    overflow: hidden;
    background-color: #333;
    position: fixed;
-   bottom: 0;
+   top: 0;
    width: 100%;
   }
   
@@ -61,6 +58,14 @@
   h1{
     text-align: center;
   }
+
+  
+ 
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
   .active{
     background-color: orange;
   }

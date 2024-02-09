@@ -7,22 +7,145 @@
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
     
+    <style>
+        .navbar {
+          overflow: hidden;
+          background-color: #333;
+          font-family: Arial, Helvetica, sans-serif;
+          top: 0;
+          position: fixed;
+          width: 100%;
+
+        }
+        
+        .navbar a {
+          float: left;
+          font-size: 16px;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          overflow: hidden;
+          
+        }
+        
+        .dropdown {
+          float: left;
+          overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+          cursor: pointer;
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+        
+        .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+          background-color: #333;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #333;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          position: fixed;
+          transform: translateX(-5em);
+        }
+        
+        .dropdown-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+          color: white;
+        }
+        
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
+        
+        .show {
+          display: block;
+        }
+        </style>
 </head>
 <body>
     
     <!--Navbar-->
-    <nav>
-        <ul id="navbar" class="pcnav">
+    <nav id="navbar-pc">
+        <ul class="pcnav">
             <li><a draggable="false" href="index.html">Home Test</a></li>
             <li><a draggable="false" href="projects.html">Projects Test</a></li>
             <li><a style="padding-top: 14.5px;" class="workbench" draggable="false" href="robotics.html">Robotics Test</a></li>
             <li class="active"><a draggable="false" href="devlog.html">Devlog Test</a></li>
             <li style="float: right;"><a draggable="false" href="contact.html">Contact Test</a></li>
         </ul>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto recusandae perferendis quod cum, tenetur facere dignissimos odio delectus incidunt dolore ratione earum doloremque blanditiis in sunt hic assumenda adipisci corporis.</p>
     </nav>
     <!--End of navbar-->
+<!-- 
+    <nav >
+        <ul class="mobilenav">
+            <li><a draggable="false" href="index.html">Home Test</a></li>
+            <li><div style="float: right;" class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a draggable="false" href="projects.html">Projects Test</a>
+                        <a style="padding-top: 14.5px;" class="workbench" draggable="false" href="robotics.html">Robotics Test</a>
+                        <a draggable="false" href="contact.html">Contact Test</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+-->
+
+    <div id="navbar-mobile" class="navbar">
+        <a class="Roboto" href="#home">Home</a>
+        <div class="dropdown" style="float: right;">
+        <button class="dropbtn" onclick="myFunction()">Menu
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div style="font-family: 'Roboto';" class="dropdown-content" id="myDropdown">
+            <a style="font-family: 'Roboto';" draggable="false" href="projects.html">Projects Test</a>
+            <a style="padding-top: 14.5px;" class="workbench" draggable="false" href="robotics.html">Robotics Test</a>
+            <a style="font-family: 'Roboto';" draggable="false" class="active" href="devlog.html">Devlog Test</a>
+            <a style="font-family: 'Roboto';" draggable="false" href="contact.html">Contact Test</a>
+        </div>
+        </div> 
+      </div>
+
+      <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        </script>
 
     <!--Version 0.0.1-->
+
     <div style="background-color: lightgray;">
         <h1 style="font-size: 5em;" class="oswald">Clothes Conundrum Version 0.0.1</h1>
 
