@@ -13,6 +13,7 @@ setInterval(function() {
     else if(windowWidth <= 619){
         document.getElementById("navbar-mobile").style.display = "block";
         document.getElementById("navbar-pc").style.display = "none";
+        document.getElementById("")
     }
     
 }, 100);
