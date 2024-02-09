@@ -5,20 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeffreymello.com</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
-    <!--Navbar-->
-    <nav>
-        <ul>
-            <li><a draggable="false" href="index.html">Home Test</a></li>
-            <li><a draggable="false" href="projects.html">Projects Test</a></li>
-            <li class="active"><a style="padding-top: 14.5px;" class="workbench" draggable="false" href="robotics.html">Robotics Test</a></li>
-            <li><a draggable="false" href="devlog.html">Devlog Test</a></li>
-            <li style="float: right;"><a draggable="false" href="contact.html">Contact Test</a></li>
-        </ul>
-    </nav>
-    <!--End of navbar-->
+   <!--Navbar-->
+   <nav id="navbar-pc">
+    <ul class="pcnav">
+        <li><a draggable="false" href="index.html">Home Test</a></li>
+        <li><a draggable="false" href="projects.html">Projects Test</a></li>
+        <li><a style="padding-top: 14.5px;" class="workbench" draggable="false" href="robotics.html">Robotics Test</a></li>
+        <li class="active"><a draggable="false" href="devlog.html">Devlog Test</a></li>
+        <li style="float: right;"><a draggable="false" href="contact.html">Contact Test</a></li>
+    </ul>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto recusandae perferendis quod cum, tenetur facere dignissimos odio delectus incidunt dolore ratione earum doloremque blanditiis in sunt hic assumenda adipisci corporis.</p>
+</nav>
+<!--End of navbar-->
 
+<div id="navbar-mobile" class="navbar">
+    <a class="Roboto" href="index.html">Home</a>
+    <div class="dropdown" style="float: right;">
+    <button class="dropbtn" onclick="dropdownFunction()">Menu
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div style="font-family: 'Roboto';" class="dropdown-content" id="myDropdown">
+        <a style="font-family: 'Roboto';" draggable="false" href="projects.html">Projects Test</a>
+        <a style="padding-top: 14.5px;" class="workbench" draggable="false" href="robotics.html">Robotics Test</a>
+        <a style="font-family: 'Roboto';" draggable="false" class="active" href="devlog.html">Devlog Test</a>
+        <a style="font-family: 'Roboto';" draggable="false" href="contact.html">Contact Test</a>
+    </div>
+    </div> 
+  </div>
+
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function dropdownFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
     
 </body>
 </html>

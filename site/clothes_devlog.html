@@ -6,81 +6,7 @@
     <title>Clothes Conundrum</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
-    
-    <style>
-        .navbar {
-          overflow: hidden;
-          background-color: #333;
-          font-family: Arial, Helvetica, sans-serif;
-          bottom: 0;
-          position: fixed;
-          width: 100%;
-          font: optional;
-        }
-        
-        .navbar a {
-          float: left;
-          font-size: 16px;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-          overflow: hidden;
-          font-size: 3em;
-        }
-        
-        .dropdown {
-          float: left;
-          overflow: hidden;
-        }
-        
-        .dropdown .dropbtn {
-          cursor: pointer;
-          font-size: 16px;  
-          border: none;
-          outline: none;
-          color: white;
-          padding: 14px 16px;
-          background-color: inherit;
-          font-family: inherit;
-          margin: 0;
-          font-size: 3em;
-        }
-        
-        .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-          background-color: #333;
-        }
-        
-        .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #333;
-          min-width: 1600px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-          position: fixed;
-          transform: translate(-13em, -25.2em);
-        }
-        
-        .dropdown-content a {
-          float: none;
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-          text-align: left;
-          color: white;
-        }
-        
-        .dropdown-content a:hover {
-          background-color: #111;
-          
-        }
-        
-        .show {
-          display: block;
-        }
-        </style>
+
 </head>
 <body style="padding-top: 0; margin-top: 0;">
     
@@ -93,14 +19,14 @@
             <li class="active"><a draggable="false" href="devlog.html">Devlog Test</a></li>
             <li style="float: right;"><a draggable="false" href="contact.html">Contact Test</a></li>
         </ul>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto recusandae perferendis quod cum, tenetur facere dignissimos odio delectus incidunt dolore ratione earum doloremque blanditiis in sunt hic assumenda adipisci corporis.</p>
+        
     </nav>
     <!--End of navbar-->
 
     <div id="navbar-mobile" class="navbar">
-        <a class="Roboto" href="#home">Home</a>
+        <a class="Roboto" href="index.html">Home</a>
         <div class="dropdown" style="float: right;">
-        <button class="dropbtn" onclick="myFunction()">Menu
+        <button class="dropbtn" onclick="dropdownFunction()">Menu
           <i class="fa fa-caret-down"></i>
         </button>
         <div style="font-family: 'Roboto';" class="dropdown-content" id="myDropdown">
@@ -115,7 +41,7 @@
       <script>
         /* When the user clicks on the button, 
         toggle between hiding and showing the dropdown content */
-        function myFunction() {
+        function dropdownFunction() {
           document.getElementById("myDropdown").classList.toggle("show");
         }
         
