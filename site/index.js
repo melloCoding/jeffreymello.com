@@ -14,7 +14,7 @@ setInterval(function() {
         document.getElementById("navbar-mobile").style.display = "block";
         document.getElementById("navbar-pc").style.display = "none";
     }
-    console.log("Finished with loop")
+    
 }, 100);
 
 /*
