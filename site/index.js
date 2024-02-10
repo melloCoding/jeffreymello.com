@@ -20,7 +20,7 @@ setInterval(function() {
         document.getElementById("navbar-pc").style.display = "none";
         //change the margin from the top to the bottom so that the text doesnt go under the navbar
         document.getElementById("body").style.marginTop = "0px";
-        document.getElementById("body").style.marginBottom = "43px";
+        document.getElementById("body").style.marginBottom = "56px";
         //
         document.getElementById("game_promo").width = "400";
     }
