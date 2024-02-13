@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffreymello.com</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="devlog.css">
+    <script src="index.js"></script>
+</head>
+<body id="body" style="padding-bottom: 0;" class="bg">
+    <!--Div for darkening the background-->
+    <div class="darken"></div>
+    <!--Navbar-->
+    <nav id="navbar-pc">
+        <ul class="pcnav">
+            <li><a draggable="false" href="index.html">Home Test</a></li>
+            <li><a draggable="false" href="projects.html">Projects Test</a></li>
+            <li><a style="padding-top: 14.5px;" class="workbench" draggable="false" href="robotics.html">Robotics Test</a></li>
+            <li class="active"><a draggable="false" href="devlog.html">Devlog Test</a></li>
+            <li style="float: right;"><a draggable="false" href="contact.html">Contact Test</a></li>
+        </ul>
+        
+    </nav>
+    <!--End of navbar-->
+
+    <div id="navbar-mobile" class="navbar" style="z-index: 10000;">
+        <a class="Roboto" href="index.html">Home</a>
+        <div class="dropdown" style="float: right;">
+        <button class="dropbtn" onclick="dropdownFunction()">Menu
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div style="font-family: 'Roboto';" class="dropdown-content" id="myDropdown">
+            <a style="font-family: 'Roboto';" draggable="false" href="projects.html">Projects Test</a>
+            <a style="padding-top: 14.5px;" class="workbench" draggable="false" href="robotics.html">Robotics Test</a>
+            <a style="font-family: 'Roboto';" draggable="false" class="active" href="devlog.html">Devlog Test</a>
+            <a style="font-family: 'Roboto';" draggable="false" href="contact.html">Contact Test</a>
+        </div>
+        </div> 
+      </div>
+
+      <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function dropdownFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        </script>
+    <div class="center" style="z-index: 1; position: none;">
+        <h1>
+            <a draggable="false" style="text-decoration: none;" href="clothes_devlog.html">
+                <p style="user-select: none; color: white; font-size: 60px; padding-bottom: -5px;" class="roboto">
+                    Clothes Conundrum
+                </p>
+                <p style="letter-spacing: 0.7px; text-align: center; font-size: 20px;" class="roboto">
+                    Clothes Conundrum is a game that was originally made for the Pirate Software Game Jam 2024 but I was unable to finish the game in time for the end of the game jam. 
+                    So why let the hard work go to waste. 
+                    The game is about a wizard who had to go around his home picking up clothes, but if you dont pick the clothes up fast enough they will multiply.
+                </p>
+            </a>
+        </h1>
+        
+    </div>
+    
+</body>
+
+</html>
