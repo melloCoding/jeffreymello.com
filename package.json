@@ -2,7 +2,7 @@
   "name": "vanilla-basic",
   "version": "1.0.0",
   "scripts": {
-    "start": "sirv ./src public --cors --single --no-clear --port 8000"
+    "start": "sirv ./site public --cors --single --no-clear --port 8000"
   },
   "description": "All fonts used are not mine they can be found at google fonts and at these links\r https://fonts.google.com/specimen/Workbench\r https://fonts.google.com/specimen/Roboto\r https://fonts.google.com/specimen/Oswald",
   "main": "index.js",
@@ -11,5 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^2.0.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
   }
+
 }
+
