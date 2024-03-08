@@ -15,6 +15,10 @@
   "devDependencies": {
     "tailwindcss": "^3.4.1"
   }
+  {
+    "dev:tailwind": "tailwindcss -i ./src/style/base.css -o ./_site/output.css --watch",
+  }
+
 
 }
 
