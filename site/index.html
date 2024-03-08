@@ -8,18 +8,18 @@
     <script src="index.js"></script>
 </head>
 <body id="body">
-    <!--Navbar-PC-->
+    <!--Navbar-->
     <nav id="navbar-pc">
         <ul class="pcnav">
-            <li  class="active"><a draggable="false" href="index.html">Home Test</a></li>
+            <li><a draggable="false" href="index.html">Home Test</a></li>
             <li><a draggable="false" href="projects.html">Projects Test</a></li>
             <li><a style="padding-top: 14.5px;" class="workbench" draggable="false" href="robotics.html">Robotics Test</a></li>
-            <li><a draggable="false" href="devlog.html">Devlog Test</a></li>
+            <li class="active"><a draggable="false" href="devlog.html">Devlog Test</a></li>
             <li style="float: right;"><a draggable="false" href="contact.html">Contact Test</a></li>
         </ul>
     </nav>
-    <!--End of navbar-pc-->
-    <!--Navbar-Mobile-->
+    <!--End of navbar-->
+
     <div id="navbar-mobile" class="navbar">
         <a class="active" href="index.html">Home</a>
         <div class="dropdown" style="float: right;">
@@ -34,15 +34,14 @@
         </div>
         </div> 
       </div>
-      <!--end of Navbar-Mobile-->
-      <!--This is the script that controlls the dropdown menu on the moblile version of the navigation bar-->
+
       <script>
         /* When the user clicks on the button, 
         toggle between hiding and showing the dropdown content */
         function dropdownFunction() {
           document.getElementById("myDropdown").classList.toggle("show");
         }
-        //doesnt work on apple unknown about android for some reason I blame apple
+        
         // Close the dropdown if the user clicks outside of it
         window.onclick = function(e) {
           if (!e.target.matches('.dropbtn')) {
@@ -52,24 +51,13 @@
             }
           }
         }
-      </script>
-      <!--Begining of the text on the page-->
-      <!--Title-->
-    <h1 style="font-size: 5em; padding-bottom: 0px; padding-top: 0px; margin-bottom: 0px" class="oswald">
+        </script>
+    <h1 style="font-size: 60px; padding-bottom: 0px; padding-top: 0px;" class="oswald">
         Hello There and Welcome
     </h1>
-    <!--Paragraphs-->
-    <p id="para1-index" class="roboto">
-      To my website. 
-      I created this website to chalenge myself and because I was board. 
-      So I decided to create a place where I could share any createions I decided to make in the future, shuch as video games and coding projects.
-      I might even try to create some electronics projects too.
-    </p>
-    <!--
     <p style="font-size: 20px;" style="text-align: center;" class="workbench">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure inventore odit alias necessitatibus facere dolorem officia dolores, molestias earum. Adipisci ducimus necessitatibus dignissimos tempore veniam doloribus, aspernatur cumque ipsam debitis.</p>
     <p class="oswald">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis modi dolore nulla tenetur perspiciatis, architecto minima nam ex in beatae. Ullam maiores at placeat dignissimos deleniti quo possimus velit qui.</p>
     <p class="papyrus">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis modi dolore nulla tenetur perspiciatis, architecto minima nam ex in beatae. Ullam maiores at placeat dignissimos deleniti quo possimus velit qui.</p>
     <p class="sans">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque earum officiis, in quisquam est nesciunt doloremque voluptas distinctio ipsa laudantium sequi, ratione hic mollitia minima iusto beatae consectetur. Dolorem, repellat.</p>
-    -->
-  </body>
+</body>
 </html>
